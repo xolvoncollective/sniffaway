@@ -1,4 +1,4 @@
-import { CheckCircle2, HeartPulse, MapPin, Phone, ShoppingCart, Star, ShieldCheck, Instagram, ChevronRight, Menu, X } from 'lucide-react';
+import { CheckCircle2, HeartPulse, MapPin, Phone, ShoppingCart, Star, ShieldCheck, Instagram, ChevronRight, Menu, X, User, ThumbsUp, Play } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -36,6 +36,7 @@ export default function Home() {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#manfaat" className="text-gray-600 hover:text-sniff-orange font-medium transition-colors">Manfaat</a>
               <a href="#galeri" className="text-gray-600 hover:text-sniff-orange font-medium transition-colors">Galeri</a>
+              <a href="#testimoni" className="text-gray-600 hover:text-sniff-orange font-medium transition-colors">Testimoni</a>
               <a href="#produk" className="text-gray-600 hover:text-sniff-orange font-medium transition-colors">Produk</a>
               <a href="#kontak" className="text-gray-600 hover:text-sniff-orange font-medium transition-colors">Kontak</a>
               <a 
@@ -66,6 +67,7 @@ export default function Home() {
           <div className="md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-4 space-y-2 shadow-xl">
             <a href="#manfaat" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sniff-orange hover:bg-orange-50 rounded-md">Manfaat</a>
             <a href="#galeri" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sniff-orange hover:bg-orange-50 rounded-md">Galeri</a>
+            <a href="#testimoni" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sniff-orange hover:bg-orange-50 rounded-md">Testimoni</a>
             <a href="#produk" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sniff-orange hover:bg-orange-50 rounded-md">Produk</a>
             <a href="#kontak" onClick={() => setIsMenuOpen(false)} className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-sniff-orange hover:bg-orange-50 rounded-md">Kontak</a>
             <a 
@@ -81,15 +83,15 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
+      <section className="relative pt-32 pb-12 sm:pb-16 md:pt-40 md:pb-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
             <div className="relative z-10 text-center md:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-50 border border-cyan-100 text-sniff-cyan font-semibold text-sm mb-6">
                 <HeartPulse className="w-4 h-4" />
                 Vitamin Kucing No. 1
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 leading-[1.1] mb-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-gray-900 leading-[1.1] mb-6">
                 BYE FLU! <br />
                 <span className="text-sniff-cyan">HELLO MEOW</span>
               </h1>
@@ -125,11 +127,11 @@ export default function Home() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-sniff-cyan rounded-full blur-2xl opacity-20 -z-10"></div>
               
               {/* Main Image placeholder replacing the poster */}
-              <div className="relative bg-white p-4 rounded-[2rem] shadow-2xl shadow-orange-500/10 rotate-2 hover:rotate-0 transition-transform duration-500 border border-orange-50">
+              <div className="relative bg-white p-3 sm:p-4 rounded-[2rem] shadow-2xl shadow-orange-500/10 rotate-2 hover:rotate-0 transition-transform duration-500 border border-orange-50">
                 <img 
                   src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
                   alt="Happy Cat SniffAway" 
-                  className="rounded-2xl w-full h-[400px] object-cover"
+                  className="rounded-2xl w-full h-[300px] sm:h-[400px] object-cover"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-gray-100 animate-bounce">
                   <div className="flex items-center gap-3">
@@ -149,15 +151,15 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section id="manfaat" className="py-20 bg-white">
+      <section id="manfaat" className="py-16 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">Kenapa Pilih SniffAway?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">Formula khusus yang dirancang oleh profesional untuk menjaga dan mengembalikan kesehatan kucing kesayangan Anda.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#FFF9F5] p-8 rounded-3xl border border-orange-100 text-center hover:-translate-y-2 transition-transform duration-300">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div className="bg-[#FFF9F5] p-6 md:p-8 rounded-3xl border border-orange-100 text-center hover:-translate-y-2 transition-transform duration-300">
               <div className="w-20 h-20 mx-auto bg-orange-100 rounded-2xl flex items-center justify-center mb-6 rotate-3">
                 <Star className="w-10 h-10 text-sniff-orange" />
               </div>
@@ -165,7 +167,7 @@ export default function Home() {
               <p className="text-gray-600">Diformulasikan dengan rasa yang sangat disukai kucing, memudahkan pemberian vitamin tanpa paksaan.</p>
             </div>
             
-            <div className="bg-cyan-50 p-8 rounded-3xl border border-cyan-100 text-center hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-cyan-50 p-6 md:p-8 rounded-3xl border border-cyan-100 text-center hover:-translate-y-2 transition-transform duration-300">
               <div className="w-20 h-20 mx-auto bg-cyan-100 rounded-2xl flex items-center justify-center mb-6 -rotate-3">
                 <HeartPulse className="w-10 h-10 text-sniff-cyan" />
               </div>
@@ -173,7 +175,7 @@ export default function Home() {
               <p className="text-gray-600">Efektif meningkatkan sistem kekebalan tubuh, mempercepat pemulihan dari flu dan pilek.</p>
             </div>
             
-            <div className="bg-[#FFF9F5] p-8 rounded-3xl border border-orange-100 text-center hover:-translate-y-2 transition-transform duration-300">
+            <div className="bg-[#FFF9F5] p-6 md:p-8 rounded-3xl border border-orange-100 text-center hover:-translate-y-2 transition-transform duration-300">
               <div className="w-20 h-20 mx-auto bg-orange-100 rounded-2xl flex items-center justify-center mb-6 rotate-3">
                 <ShieldCheck className="w-10 h-10 text-sniff-orange" />
               </div>
@@ -185,9 +187,9 @@ export default function Home() {
       </section>
 
       {/* Gallery / Poster Section */}
-      <section id="galeri" className="py-20 bg-[#FFF9F5]">
+      <section id="galeri" className="py-16 md:py-20 bg-[#FFF9F5]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10 md:mb-12">
             <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">Kenali Produk Kami</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">Kenali lebih dekat manfaat SniffAway untuk anabul kesayangan Anda.</p>
           </div>
@@ -229,8 +231,136 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimoni Section */}
+      <section id="testimoni" className="py-16 md:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-4xl md:text-6xl font-black text-[#B1CC40] mb-4">Devoured.</h2>
+            <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto font-medium">Sekali endus, sekali gigit, langsung ludes! Buktinya? Coba deh lihat sendiri review para beast dan pawrents.</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            {/* Card 1 */}
+            <div className="bg-[#FFF9F5] rounded-[2rem] p-6 md:p-8 border border-orange-100 flex flex-col items-center shadow-lg shadow-orange-500/5 hover:-translate-y-1 transition-transform duration-300">
+              <h3 className="text-xl md:text-2xl font-black text-[#B1CC40] text-center mb-6 md:mb-8 leading-tight">
+                Real meat,<br/>not ultra-processed.
+              </h3>
+              <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 w-full flex-grow flex flex-col text-left">
+                <div className="flex items-center gap-3 mb-4">
+                   <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center overflow-hidden">
+                      <User className="w-6 h-6 text-gray-400" />
+                   </div>
+                   <div>
+                     <p className="text-sm font-bold text-gray-800">f*****g</p>
+                     <div className="flex text-yellow-400 mt-0.5">
+                       {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-current" />)}
+                     </div>
+                   </div>
+                </div>
+                <p className="text-sm text-gray-700 mb-4 leading-relaxed">
+                  Doggi sukaa 💖 mudah hancur jg jadi bisa di campur ke makanannya. Cocok juga untuk jadi snack buat doggi yg ada masalah liver krn lemak daging kelinci sgt rendah. Asli daging bukan snack processed
+                </p>
+                <div className="flex gap-2 mt-auto">
+                  <div className="relative rounded-lg overflow-hidden flex-1 aspect-square max-w-[100px]">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="review" className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+                      <Play className="w-8 h-8 text-white opacity-90" fill="currentColor"/>
+                    </div>
+                    <span className="absolute bottom-1 right-1 text-[10px] bg-black/60 text-white px-1.5 py-0.5 rounded font-medium">0:02</span>
+                  </div>
+                  <div className="rounded-lg overflow-hidden flex-1 aspect-square max-w-[100px]">
+                    <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="review" className="w-full h-full object-cover" />
+                  </div>
+                </div>
+                <div className="flex justify-between items-center mt-4 pt-4 border-t border-gray-100 text-xs text-gray-400">
+                   <span>22-07-2025 16:12</span>
+                   <span className="flex items-center gap-1 hover:text-sniff-orange cursor-pointer">Membantu <ThumbsUp className="w-3.5 h-3.5" /></span>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-[#FFF9F5] rounded-[2rem] p-6 md:p-8 border border-orange-100 flex flex-col items-center shadow-lg shadow-orange-500/5 hover:-translate-y-1 transition-transform duration-300">
+              <h3 className="text-xl md:text-2xl font-black text-center mb-6 md:mb-8 leading-tight">
+                <span className="text-[#B1CC40]">No additives,<br/>so it's </span><span className="text-[#4A90E2]">worry free!</span>
+              </h3>
+              <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 w-full flex-grow flex flex-col text-left">
+                <div className="flex items-center gap-3 mb-4">
+                   <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center overflow-hidden">
+                      <img src="https://images.unsplash.com/photo-1537151608804-ea6f11840bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="avatar" className="w-full h-full object-cover" />
+                   </div>
+                   <div>
+                     <p className="text-sm font-bold text-gray-800">aydenden</p>
+                     <div className="flex text-yellow-400 mt-0.5">
+                       {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-current" />)}
+                     </div>
+                   </div>
+                </div>
+                <div className="text-sm text-gray-700 mb-4 space-y-1">
+                  <p>Kualitas: <span className="text-gray-500">sangat bagus</span></p>
+                  <p>Kegunaan: <span className="text-gray-500">Topper dan Treats Majikan</span></p>
+                  <p>Kadaluarsa: <span className="text-gray-500">Masih lama</span></p>
+                  <p className="mt-3">favorit poll untuk majikan. Dan no additives or coloring. 🧡🧡🧡🧡</p>
+                </div>
+                <div className="flex gap-2 mt-auto">
+                  <div className="rounded-lg overflow-hidden flex-1 aspect-square max-w-[100px]">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="review" className="w-full h-full object-cover" />
+                  </div>
+                </div>
+                <div className="flex justify-between items-center mt-4 pt-4 border-t border-gray-100 text-xs text-gray-400">
+                   <span>11-08-2025 13:28</span>
+                   <span className="flex items-center gap-1 hover:text-sniff-orange cursor-pointer">Membantu <ThumbsUp className="w-3.5 h-3.5" /></span>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-[#FFF9F5] rounded-[2rem] p-6 md:p-8 border border-orange-100 flex flex-col items-center shadow-lg shadow-orange-500/5 hover:-translate-y-1 transition-transform duration-300">
+              <h3 className="text-xl md:text-2xl font-black text-[#B1CC40] text-center mb-6 md:mb-8 leading-tight">
+                One try,<br/>and they're hooked!
+              </h3>
+              <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 w-full flex-grow flex flex-col text-left">
+                <div className="flex items-center gap-3 mb-4">
+                   <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center overflow-hidden">
+                      <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="avatar" className="w-full h-full object-cover" />
+                   </div>
+                   <div>
+                     <p className="text-sm font-bold text-gray-800">xavierebambi</p>
+                     <div className="flex text-yellow-400 mt-0.5">
+                       {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-current" />)}
+                     </div>
+                   </div>
+                </div>
+                <p className="text-sm text-gray-700 mb-4 leading-relaxed">
+                  Sekali makan<br/>
+                  Lalu jadi rebutan<br/>
+                  Lagi dan minta lagi<br/>
+                  Seneng kalo anak2 doyan
+                </p>
+                <div className="flex gap-2 mt-auto">
+                  <div className="relative rounded-lg overflow-hidden flex-1 aspect-square max-w-[100px]">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="review" className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+                      <Play className="w-8 h-8 text-white opacity-90" fill="currentColor"/>
+                    </div>
+                    <span className="absolute bottom-1 right-1 text-[10px] bg-black/60 text-white px-1.5 py-0.5 rounded font-medium">0:01</span>
+                  </div>
+                  <div className="rounded-lg overflow-hidden flex-1 aspect-square max-w-[100px]">
+                    <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="review" className="w-full h-full object-cover" />
+                  </div>
+                </div>
+                <div className="flex justify-between items-center mt-4 pt-4 border-t border-gray-100 text-xs text-gray-400">
+                   <span>02-05-2025 10:15</span>
+                   <span className="flex items-center gap-1 hover:text-sniff-orange cursor-pointer">Membantu (1) <ThumbsUp className="w-3.5 h-3.5" /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing/Products Section */}
-      <section id="produk" className="py-24 bg-sniff-orange relative overflow-hidden">
+      <section id="produk" className="py-16 md:py-24 bg-sniff-orange relative overflow-hidden">
         {/* Background elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
           <svg className="absolute left-0 top-0 h-full w-full opacity-10" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -239,9 +369,9 @@ export default function Home() {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16 text-white">
+          <div className="text-center mb-10 md:mb-16 text-white">
             <h2 className="text-3xl md:text-5xl font-black mb-4">Pilihan Bundling Hemat</h2>
-            <p className="text-orange-100 text-lg max-w-2xl mx-auto">Pilih paket yang paling sesuai dengan kebutuhan anabul di rumah. Lebih banyak, lebih hemat!</p>
+            <p className="text-orange-100 text-base md:text-lg max-w-2xl mx-auto">Pilih paket yang paling sesuai dengan kebutuhan anabul di rumah. Lebih banyak, lebih hemat!</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -294,9 +424,9 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="kontak" className="py-20 bg-white">
+      <section id="kontak" className="py-16 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#FFF9F5] rounded-[3rem] p-8 md:p-12 border border-orange-100 shadow-xl shadow-orange-500/5 text-center">
+          <div className="bg-[#FFF9F5] rounded-[2rem] md:rounded-[3rem] p-6 sm:p-8 md:p-12 border border-orange-100 shadow-xl shadow-orange-500/5 text-center">
             <h2 className="text-3xl font-black text-gray-900 mb-8">Hubungi Kami</h2>
             
             <div className="flex flex-col space-y-6 max-w-lg mx-auto">
