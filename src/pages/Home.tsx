@@ -243,7 +243,7 @@ export default function Home() {
             {/* Card 1 */}
             <div className="bg-[#FFF9F5] rounded-[2rem] p-6 md:p-8 border border-orange-100 flex flex-col items-center shadow-lg shadow-orange-500/5 hover:-translate-y-1 transition-transform duration-300">
               <h3 className="text-xl md:text-2xl font-black text-[#B1CC40] text-center mb-6 md:mb-8 leading-tight">
-                Real meat,<br/>not ultra-processed.
+                Khasiat nyata,<br/>terbukti ampuh.
               </h3>
               <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 w-full flex-grow flex flex-col text-left">
                 <div className="flex items-center gap-3 mb-4">
@@ -251,14 +251,14 @@ export default function Home() {
                       <User className="w-6 h-6 text-gray-400" />
                    </div>
                    <div>
-                     <p className="text-sm font-bold text-gray-800">f*****g</p>
+                     <p className="text-sm font-bold text-gray-800">r*****a</p>
                      <div className="flex text-yellow-400 mt-0.5">
                        {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-current" />)}
                      </div>
                    </div>
                 </div>
                 <p className="text-sm text-gray-700 mb-4 leading-relaxed">
-                  Doggi sukaa 💖 mudah hancur jg jadi bisa di campur ke makanannya. Cocok juga untuk jadi snack buat doggi yg ada masalah liver krn lemak daging kelinci sgt rendah. Asli daging bukan snack processed
+                  Anabulku tadinya meler terus, nyoba dicampur ke wet food ternyata doyan banget 💖. Baru 3 hari rutin kasih SniffAway, bersin-bersinnya langsung hilang dan balik aktif lagi.
                 </p>
                 <div className="flex gap-2 mt-auto">
                   <div className="relative rounded-lg overflow-hidden flex-1 aspect-square max-w-[100px]">
@@ -282,7 +282,7 @@ export default function Home() {
             {/* Card 2 */}
             <div className="bg-[#FFF9F5] rounded-[2rem] p-6 md:p-8 border border-orange-100 flex flex-col items-center shadow-lg shadow-orange-500/5 hover:-translate-y-1 transition-transform duration-300">
               <h3 className="text-xl md:text-2xl font-black text-center mb-6 md:mb-8 leading-tight">
-                <span className="text-[#B1CC40]">No additives,<br/>so it's </span><span className="text-[#4A90E2]">worry free!</span>
+                <span className="text-[#B1CC40]">Formula aman,<br/>bebas </span><span className="text-[#4A90E2]">was-was!</span>
               </h3>
               <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 w-full flex-grow flex flex-col text-left">
                 <div className="flex items-center gap-3 mb-4">
@@ -290,7 +290,7 @@ export default function Home() {
                       <img src="https://images.unsplash.com/photo-1537151608804-ea6f11840bc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="avatar" className="w-full h-full object-cover" />
                    </div>
                    <div>
-                     <p className="text-sm font-bold text-gray-800">aydenden</p>
+                     <p className="text-sm font-bold text-gray-800">budi.pratama</p>
                      <div className="flex text-yellow-400 mt-0.5">
                        {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-current" />)}
                      </div>
@@ -298,9 +298,9 @@ export default function Home() {
                 </div>
                 <div className="text-sm text-gray-700 mb-4 space-y-1">
                   <p>Kualitas: <span className="text-gray-500">sangat bagus</span></p>
-                  <p>Kegunaan: <span className="text-gray-500">Topper dan Treats Majikan</span></p>
+                  <p>Kegunaan: <span className="text-gray-500">Vitamin Flu Kucing</span></p>
                   <p>Kadaluarsa: <span className="text-gray-500">Masih lama</span></p>
-                  <p className="mt-3">favorit poll untuk majikan. Dan no additives or coloring. 🧡🧡🧡🧡</p>
+                  <p className="mt-3">Favorit poll buat majikan di rumah yang lagi sakit. Gampang dikasih dan aman tanpa efek samping. 🧡🧡🧡🧡</p>
                 </div>
                 <div className="flex gap-2 mt-auto">
                   <div className="rounded-lg overflow-hidden flex-1 aspect-square max-w-[100px]">
@@ -317,7 +317,7 @@ export default function Home() {
             {/* Card 3 */}
             <div className="bg-[#FFF9F5] rounded-[2rem] p-6 md:p-8 border border-orange-100 flex flex-col items-center shadow-lg shadow-orange-500/5 hover:-translate-y-1 transition-transform duration-300">
               <h3 className="text-xl md:text-2xl font-black text-[#B1CC40] text-center mb-6 md:mb-8 leading-tight">
-                One try,<br/>and they're hooked!
+                Sekali coba,<br/>langsung doyan!
               </h3>
               <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 w-full flex-grow flex flex-col text-left">
                 <div className="flex items-center gap-3 mb-4">
@@ -325,17 +325,17 @@ export default function Home() {
                       <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="avatar" className="w-full h-full object-cover" />
                    </div>
                    <div>
-                     <p className="text-sm font-bold text-gray-800">xavierebambi</p>
+                     <p className="text-sm font-bold text-gray-800">salsabilaputri</p>
                      <div className="flex text-yellow-400 mt-0.5">
                        {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-current" />)}
                      </div>
                    </div>
                 </div>
                 <p className="text-sm text-gray-700 mb-4 leading-relaxed">
-                  Sekali makan<br/>
-                  Lalu jadi rebutan<br/>
-                  Lagi dan minta lagi<br/>
-                  Seneng kalo anak2 doyan
+                  Sekali jilat<br/>
+                  Langsung ketagihan<br/>
+                  Nafsu makan naik lagi<br/>
+                  Seneng liat anak-anak sehat
                 </p>
                 <div className="flex gap-2 mt-auto">
                   <div className="relative rounded-lg overflow-hidden flex-1 aspect-square max-w-[100px]">
